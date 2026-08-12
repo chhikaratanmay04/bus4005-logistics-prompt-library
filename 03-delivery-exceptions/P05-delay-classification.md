@@ -7,7 +7,7 @@ Classify active delivery delays for operations staff.
 Delay reports can be inconsistent, making it harder to decide which cases need immediate attention.
 
 ## Version 1
-**Prompt:** Classify this delivery delay and explain the problem: [DELAY DETAILS]
+**Prompt:** Classify this delivery delay and explain the problem.
 
 **Issue:** Severity terms were undefined and the AI could recommend unapproved actions.
 
@@ -32,9 +32,6 @@ Return:
 7. Recommended administrative action
 
 Recommended actions must be limited to: monitor, contact customer, or escalate to operations manager. Do not create a new ETA or decide compensation.
-
-Delay details:
-[DELAY DETAILS]
 
 ## Example Input
 Shipment ID: SP510  
