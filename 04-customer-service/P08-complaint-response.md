@@ -7,7 +7,7 @@ Draft a professional response to a logistics complaint.
 Customer-service teams spend time writing repetitive acknowledgements and may accidentally make unapproved promises.
 
 ## Version 1
-**Prompt:** Reply to this logistics customer complaint: [CUSTOMER COMPLAINT]
+**Prompt:** Reply to this logistics customer complaint.
 
 **Issue:** The response could promise compensation or actions that were not approved.
 
@@ -28,12 +28,6 @@ The response must:
 Do not promise a refund, discount, replacement, compensation or specific investigation outcome unless explicitly included in the approved action. Do not admit legal responsibility.
 
 Keep the response under 150 words.
-
-Customer complaint:
-[CUSTOMER COMPLAINT]
-
-Approved action:
-[APPROVED ACTION]
 
 Add this heading: **Draft – staff review required**
 
