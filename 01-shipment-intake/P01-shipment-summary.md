@@ -7,7 +7,7 @@ Shipment intake and order processing.
 Shipment information may arrive as unstructured text, forcing staff to manually identify delivery details.
 
 ## Version 1
-**Prompt:** Summarise the following delivery information: [SHIPMENT INFORMATION]
+**Prompt:** Summarise the following delivery information.
 
 **Issue:** The output format was not fixed, missing information was not clearly handled and the AI was not prevented from guessing.
 
@@ -29,9 +29,6 @@ Using only the shipment information provided, extract and organise the following
 Do not invent missing information. If information is unavailable, write **“Not provided”.**
 
 Return the answer using the exact headings listed above.
-
-Shipment information:
-[SHIPMENT INFORMATION]
 
 ## Example Input
 Sarah needs two cartons picked up from Sunshine warehouse tomorrow morning and delivered to Richmond before 3 pm. Total weight is 18 kg. Fragile items. Customer requested a phone call before delivery.
