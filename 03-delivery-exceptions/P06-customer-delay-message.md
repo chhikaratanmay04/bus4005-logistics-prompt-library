@@ -70,3 +70,9 @@ Incorrect or outdated ETA information could mislead customers.
 
 ## Mitigation and Human Oversight
 Staff verify the latest operational data and approve every customer-facing message.
+
+## Audit Log
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---|---|---|---|
+| Version 1 | Used a simple request to write a delay message without limiting the information, promises or actions the AI could include. | The message was polite and useful, but there were no safeguards against invented ETAs, reasons, refunds or guarantees in other cases. | Customer-facing prompts require stronger controls because unsupported statements can create service and reputational risk. |
+| Final v1.1 | Added a customer-communication role, grounding to approved information, a 100-word limit, prohibited compensation/guarantees and added a staff-review label. | The output remained concise and professional while clearly using only the confirmed reason and ETA and signalling human approval before sending. | Grounding, explicit prohibitions and human-review instructions make AI-generated customer communication safer for operational use. |
