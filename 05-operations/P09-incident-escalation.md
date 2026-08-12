@@ -7,7 +7,7 @@ Prepare a management escalation summary for operational incidents.
 Important incident facts may be scattered through shift notes and can be mixed with assumptions.
 
 ## Version 1
-**Prompt:** Summarise this warehouse incident and say if it should be escalated: [INCIDENT DETAILS]
+**Prompt:** Summarise this warehouse incident and say if it should be escalated.
 
 **Issue:** The AI was asked to make an escalation decision without defined controls and could make safety or liability conclusions.
 
@@ -32,9 +32,6 @@ Use these headings:
 If information is missing, write **“Not provided – follow-up required”.**
 
 Do not determine the cause, assign blame, make medical conclusions or decide legal responsibility. If an injury, safety concern or serious operational disruption is explicitly reported, state **“Immediate management review required.”**
-
-Incident details:
-[INCIDENT DETAILS]
 
 ## Example Input
 A forklift lightly contacted a pallet and two cartons fell. No injury was reported. One carton has visible damage. The area has been secured. The supervisor has not yet been informed.
