@@ -40,6 +40,8 @@ SP612 delivered successfully.
 ### Version 1 Output
 Shift handover: SP610 is delayed by 45 minutes with a new ETA of 6:00 pm and the customer has been notified. SP611 was not delivered because the customer was unavailable and redelivery is pending. WH-14 is a damaged carton that has been isolated in the warehouse and is waiting for supervisor review. SP612 was delivered successfully.
 
+**Issues & Limitations – Version 1:** Open actions, completed work and follow-ups were mixed in one paragraph, making priorities harder to scan.
+
 ### Final Version v1.1 Output
 1. **High-priority outstanding actions**
    - No item is explicitly marked as high priority in the notes.
@@ -64,6 +66,8 @@ Shift handover: SP610 is delayed by 45 minutes with a new ETA of 6:00 pm and the
    - SP610: next required action not provided.
    - SP611: redelivery timing and action already taken are not provided.
    - WH-14: supervisor review timing/person is not provided.
+
+**Improvements – Final v1.1:** Separated open, completed and missing-information sections, making the handover clearer and more actionable.
 
 ### Comparison
 Version 1 accurately summarised the notes but mixed completed work, open issues and follow-up requirements in one paragraph. Version 1.1 separated delayed shipments, failed deliveries, warehouse damage, completed work and missing information. It also avoided inventing a priority, deadline or responsible person. The improved output is easier for the incoming shift to scan and action.
