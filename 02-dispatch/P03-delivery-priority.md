@@ -7,7 +7,7 @@ Support dispatch prioritisation.
 Dispatch staff may receive several time-sensitive shipments and need a consistent first-pass classification.
 
 ## Version 1
-**Prompt:** Decide how urgent this delivery is: [DELIVERY DETAILS]
+**Prompt:** Decide how urgent this delivery is.
 
 **Issue:** Priority definitions were subjective and inconsistent.
 
@@ -30,9 +30,6 @@ Return:
 5. Dispatcher review required: Yes/No
 
 Do not assign a driver, route or new deadline.
-
-Delivery details:
-[DELIVERY DETAILS]
 
 ## Example Input
 Shipment ID: SP310  
