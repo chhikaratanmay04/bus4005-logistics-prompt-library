@@ -33,6 +33,44 @@ Do not create deadlines, causes, responsibilities or customer commitments that a
 Shift notes:
 [SHIFT NOTES]
 
+## Example Input
+SP610 delayed 45 minutes; new ETA 6:00 pm; customer notified.  
+SP611 delivery failed because customer was unavailable; redelivery pending.  
+WH-14 damaged carton isolated in warehouse; supervisor review pending.  
+SP612 delivered successfully.
+
+## ChatGPT Test Evidence
+### Version 1 Output
+Shift handover: SP610 is delayed by 45 minutes with a new ETA of 6:00 pm and the customer has been notified. SP611 was not delivered because the customer was unavailable and redelivery is pending. WH-14 is a damaged carton that has been isolated in the warehouse and is waiting for supervisor review. SP612 was delivered successfully.
+
+### Final Version v1.1 Output
+1. **High-priority outstanding actions**
+   - No item is explicitly marked as high priority in the notes.
+
+2. **Delayed shipments**
+   - **SP610** – Current status: delayed by 45 minutes; new ETA 6:00 pm. Action already taken: customer notified. Next required action: Not provided.
+
+3. **Failed deliveries and redeliveries**
+   - **SP611** – Current status: delivery failed because customer was unavailable. Action already taken: Not provided. Next required action: Redelivery pending.
+
+4. **Damaged goods or warehouse issues**
+   - **WH-14** – Current status: damaged carton isolated in warehouse. Action already taken: carton isolated. Next required action: Supervisor review pending.
+
+5. **Customer follow-ups**
+   - **SP610** – Customer has already been notified.
+   - **SP611** – Customer follow-up information not provided.
+
+6. **Completed items**
+   - **SP612** – Delivered successfully.
+
+7. **Missing information requiring confirmation**
+   - SP610: next required action not provided.
+   - SP611: redelivery timing and action already taken are not provided.
+   - WH-14: supervisor review timing/person is not provided.
+
+### Comparison
+Version 1 accurately summarised the notes but mixed completed work, open issues and follow-up requirements in one paragraph. Version 1.1 separated delayed shipments, failed deliveries, warehouse damage, completed work and missing information. It also avoided inventing a priority, deadline or responsible person. The improved output is easier for the incoming shift to scan and action.
+
 ## Test Result
 The final prompt separated open actions from completed work and made the handover easier for the next shift to act on.
 
