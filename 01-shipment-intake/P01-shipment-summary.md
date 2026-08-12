@@ -1,62 +1,28 @@
-## Current Version v1.1
+# Prompt 1 – Shipment Summary
 
-## Intended Workflow-
-Shipment intake and order processing.
+## Version 1
 
-## Problem Being Solved-
-Shipment information can arrive in inconsistent formats, requiring staff to manually identify important delivery details. 
+### Prompt
+Summarise the following delivery information:
 
-## Prompt Text
-Pickup location: Sunshine warehouse
-Delivery location: Richmond
-Delivery date: Tomorrow
-Delivery deadline: Before 3:00 pm
-Number of packages: Two cartons
-Weight: 18 kg
-Special handling requirements: Fragile items
-Customer instructions: Phone call before delivery
+[SHIPMENT INFORMATION]
 
-## Inputs
-Shipment information
+### Example Input
+Sarah needs two cartons picked up from Sunshine warehouse tomorrow morning and delivered to Richmond before 3 pm. Total weight is 18 kg. Fragile items. Customer requested a phone call before delivery.
 
-## Expected Output
-Structured shipment summary.
-
-## Automation Potential
-High. The prompt could be integrated with a shipment intake system to convert unstructured shipment information into a consistent format. 
-
-## Human Oversight
-Staff should review unusual, incomplete or high-value shipments before dispatch.
-
-## Risks and Limitations 
-- Missing source information
-- AI incorrectly interpreting instructions
-- Privacy risks if personal customer information is unnecessarily processed 
-- AI may not understand unusual logistics terminology
-
-## Mitigation 
-- Use only supplied information
-- Do not infer missing details
-- Human review for exceptions
-- Minimise unnecessary personal data
-
-## Version History 
-
-### v1.0 Prompt: 
+### Test Output
 Delivery Summary
-Customer: Sarah
-Pickup: Two cartons from Sunshine warehouse, tomorrow morning
-Delivery: Richmond, before 3:00 pm
-Total weight: 18 kg
-Handling: Fragile items—handle with care
-Instruction: Call the customer before delivery
+- Pickup: Sunshine warehouse
+- Delivery: Richmond
+- Pickup time: Tomorrow morning
+- Delivery deadline: Before 3 pm
+- Packages: Two cartons
+- Weight: 18 kg
+- Handling: Fragile
+- Customer instruction: Call before delivery
 
-
-Test result: 
-The prompt successfully identified the main shipment details, including pickup and delivery locations, delivery date and deadline, number of packages, weight, special handling requirements, and customer instructions. The output was clear and easy to understand.
-
-Problem: Output was not consistent and important fields could be missed. 
-
-### v1.1 Changes: Added role, fixed fields, grounding instruction and missing-information rule.
-
-Result: The output became more structured and predictable.
+### Issues Identified
+- The prompt does not define a fixed output structure.
+- It does not say what to do when information is missing.
+- It does not prevent the AI from guessing details.
+- Different runs may format the same shipment differently.
