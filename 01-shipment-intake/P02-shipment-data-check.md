@@ -7,7 +7,7 @@ Pre-dispatch shipment validation.
 Incomplete records can reach dispatch staff and create avoidable delays or rework.
 
 ## Version 1
-**Prompt:** Check this shipment information and tell me what is missing: [SHIPMENT INFORMATION]
+**Prompt:** Check this shipment information and tell me what is missing.
 
 **Issue:** Mandatory fields were undefined and the AI could treat optional fields as required.
 
@@ -38,9 +38,6 @@ Return exactly:
 5. Staff action required
 
 Mark **READY** only when every required field is provided. Do not guess or create missing information.
-
-Shipment record:
-[SHIPMENT INFORMATION]
 
 ## Example Input
 Shipment ID: LG204  
