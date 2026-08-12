@@ -1,8 +1,10 @@
 ## Current Version v1.1
 
-## Intended Workflow Shipment intake and order processing.
+## Intended Workflow-
+Shipment intake and order processing.
 
-## Problem Being Solved Shipment information can arrive in inconsistent formats, requiring staff to manually identify important delivery details. 
+## Problem Being Solved-
+Shipment information can arrive in inconsistent formats, requiring staff to manually identify important delivery details. 
 
 ## Prompt Text
 Pickup location: Sunshine warehouse
@@ -14,13 +16,17 @@ Weight: 18 kg
 Special handling requirements: Fragile items
 Customer instructions: Phone call before delivery
 
-## Inputs - Shipment information
+## Inputs
+Shipment information
 
-## Expected Output Structured shipment summary.
+## Expected Output
+Structured shipment summary.
 
-## Automation Potential High. The prompt could be integrated with a shipment intake system to convert unstructured shipment information into a consistent format. 
+## Automation Potential
+High. The prompt could be integrated with a shipment intake system to convert unstructured shipment information into a consistent format. 
 
-## Human Oversight Staff should review unusual, incomplete or high-value shipments before dispatch.
+## Human Oversight
+Staff should review unusual, incomplete or high-value shipments before dispatch.
 
 ## Risks and Limitations 
 - Missing source information
