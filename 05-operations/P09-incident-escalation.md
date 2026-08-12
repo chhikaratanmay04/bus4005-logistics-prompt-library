@@ -40,7 +40,10 @@ A forklift lightly contacted a pallet and two cartons fell. No injury was report
 ### Version 1 Output
 A forklift contacted a pallet, causing two cartons to fall. No injuries were reported, but one carton was visibly damaged. The area has been secured. The incident should be escalated to the supervisor for review because equipment contact and product damage occurred.
 
-**Issues & Limitations – Version 1:** The AI made an escalation judgement without controls and could infer blame, safety or legal conclusions.
+**Issues & Limitations – Version 1:**
+- The AI made a direct escalation judgement without defined business rules.
+- Missing details such as date, location and people involved were not highlighted.
+- The prompt could lead to unsupported safety, blame or liability conclusions.
 
 ### Final Version v1.1 Output
 1. **Incident summary:** A forklift contacted a pallet and two cartons fell.
@@ -54,7 +57,10 @@ A forklift contacted a pallet, causing two cartons to fall. No injuries were rep
 9. **Recommended next administrative step:** Inform the supervisor and arrange management review under normal incident procedures.
 10. **Person responsible for review:** Not provided – follow-up required
 
-**Improvements – Final v1.1:** Separated confirmed and missing facts, added no-blame constraints and kept final review with management.
+**Improvements – Final v1.1:**
+- Added a fixed incident structure that separates confirmed facts from missing data.
+- Added no-blame, no-cause and no-legal-conclusion safeguards.
+- Kept the AI focused on administrative follow-up while management retains final responsibility.
 
 ### Comparison
 Version 1 made a direct escalation judgement without defined controls. Version 1.1 separated confirmed facts from missing information, avoided assigning cause or blame and clearly identified what still needed follow-up. The final prompt is more suitable for sensitive operational incidents because it supports management review without replacing formal safety or investigation procedures.
