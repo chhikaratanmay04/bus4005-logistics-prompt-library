@@ -81,3 +81,9 @@ Incorrect source data will still produce an incorrect brief.
 
 ## Mitigation and Human Oversight
 Dispatch staff verify the brief before release to the driver.
+
+## Audit Log
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---|---|---|---|
+| Version 1 | Requested a driver brief without defining the layout, missing-data behaviour or boundaries on route and access information. | The output included the correct facts but placed them in a paragraph, making rapid operational scanning harder. | Even accurate content can be less useful when the output format does not match the user's workflow. |
+| Final v1.1 | Added fixed driver-facing headings, a “Not provided” rule and constraints against inventing routes, travel times or access details. | The same information became a clear, scannable dispatch brief with all important fields separated and no unsupported additions. | Designing the output around the end user's workflow improves usability, while constraints reduce operational risk. |
