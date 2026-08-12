@@ -7,7 +7,7 @@ Create a structured logistics shift handover.
 Unstructured handover notes can hide urgent unfinished work and increase the risk of tasks being missed.
 
 ## Version 1
-**Prompt:** Summarise these logistics notes for the next shift: [SHIFT NOTES]
+**Prompt:** Summarise these logistics notes for the next shift.
 
 **Issue:** Completed and outstanding work were mixed together and priority actions were not obvious.
 
@@ -29,9 +29,6 @@ Organise the information under these headings:
 For each active item, include the shipment or incident ID if provided, current status, action already taken and next required action.
 
 Do not create deadlines, causes, responsibilities or customer commitments that are not provided.
-
-Shift notes:
-[SHIFT NOTES]
 
 ## Example Input
 SP610 delayed 45 minutes; new ETA 6:00 pm; customer notified.  
