@@ -34,6 +34,27 @@ Do not assign a driver, route or new deadline.
 Delivery details:
 [DELIVERY DETAILS]
 
+## Example Input
+Shipment ID: SP310  
+Pickup time: 8:00 am today  
+Delivery deadline: 11:00 am today  
+Service type: Same-day delivery  
+Special handling: None provided
+
+## ChatGPT Test Evidence
+### Version 1 Output
+This delivery should be treated as **high priority** because it is a same-day shipment with a short delivery window between 8:00 am and 11:00 am.
+
+### Final Version v1.1 Output
+1. **Priority:** High
+2. **Facts used:** Pickup time is 8:00 am today; delivery deadline is 11:00 am today; service type is Same-day delivery.
+3. **Reason for classification:** The shipment is explicitly marked same-day and the delivery deadline is within a three-hour window, which meets the High-priority rules.
+4. **Missing information:** None required for this classification.
+5. **Dispatcher review required:** Yes
+
+### Comparison
+Both versions identified the shipment as urgent, but Version 1 relied on general judgement. Version 1.1 applied a defined rule, showed the exact facts used and made the decision auditable. It also prevented the AI from assigning a driver, route or new deadline and clearly signalled that a dispatcher should review a High-priority case.
+
 ## Test Result
 The final prompt constrained the decision to stated business rules and made the reasoning auditable.
 
