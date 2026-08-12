@@ -66,3 +66,9 @@ Business priorities may change and unusual deliveries may require exceptions.
 
 ## Mitigation and Human Oversight
 Dispatcher reviews High and Review Required cases and overrides the AI when operational context requires it.
+
+## Audit Log
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---|---|---|---|
+| Version 1 | Used a broad urgency question without defining priority categories, thresholds or review requirements. | The AI correctly called the example High priority, but the decision depended on general judgement rather than documented business rules. | Classification can appear correct while still being difficult to audit or reproduce if category rules are not explicit. |
+| Final v1.1 | Added High/Medium/Low/Review Required rules, required facts and reasoning, and prevented driver, route or deadline decisions. | The output applied a clear High-priority rule, explained the facts used and flagged dispatcher review. | Rule-based prompting makes classifications more transparent and consistent while preserving human control over operational decisions. |
