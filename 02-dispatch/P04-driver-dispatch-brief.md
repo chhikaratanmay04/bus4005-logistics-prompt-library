@@ -7,7 +7,7 @@ Create a clear driver-facing dispatch brief.
 Drivers may receive long or inconsistent dispatch notes with critical instructions buried in text.
 
 ## Version 1
-**Prompt:** Create a driver brief from these delivery details: [DELIVERY DETAILS]
+**Prompt:** Create a driver brief from these delivery details.
 
 **Issue:** Important facts could be buried in prose and missing details were not flagged.
 
@@ -33,9 +33,6 @@ Use these headings:
 If a field is not provided, write **“Not provided”.**
 
 Do not create routes, travel times, access instructions or customer details that are not supplied.
-
-Delivery details:
-[DELIVERY DETAILS]
 
 ## Example Input
 Shipment ID: SP421  
