@@ -43,7 +43,10 @@ Reason provided: Road closure
 ### Version 1 Output
 Hi Alex, we’re sorry that shipment SP522 is running late due to a road closure. Your updated estimated arrival time is 4:20 pm. We apologise for the inconvenience and appreciate your patience.
 
-**Issues & Limitations – Version 1:** No safeguards prevented invented ETAs, reasons, guarantees, refunds or compensation in future cases.
+**Issues & Limitations – Version 1:**
+- The message was usable but had no rules limiting unsupported details or promises.
+- The AI could potentially invent a reason, ETA, refund or compensation in other cases.
+- There was no clear indication that staff should review the message before sending.
 
 ### Final Version v1.1 Output
 **Draft – staff review required**
@@ -55,7 +58,10 @@ We apologise for the delay to shipment SP522. The confirmed reason provided is a
 Kind regards,  
 Customer Service Team
 
-**Improvements – Final v1.1:** Grounded the message to approved data, added staff review and blocked unsupported promises or compensation.
+**Improvements – Final v1.1:**
+- Limited the response to approved and confirmed information only.
+- Prohibited refunds, compensation, guarantees and invented ETAs or reasons.
+- Added a staff-review label and kept the message concise and professional.
 
 ### Comparison
 Version 1 produced a usable message but had no built-in controls over promises or unsupported details. Version 1.1 clearly labelled the message as a draft, used only approved information, retained the confirmed ETA and reason, and added a rule against refunds, compensation and guaranteed delivery times. This makes the final version safer for customer-facing use.
