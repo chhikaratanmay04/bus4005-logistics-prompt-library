@@ -47,7 +47,10 @@ My parcel arrived one day late and the outer box was crushed, although the item 
 ### Version 1 Output
 This complaint relates to a late delivery and damaged packaging. It should be sent to customer service for follow-up because the customer has asked to be contacted.
 
-**Issues & Limitations – Version 1:** No standard category or urgency rules were used, so complaint routing could vary between outputs.
+**Issues & Limitations – Version 1:**
+- The output identified the issues but did not choose one standard primary category.
+- No urgency level was assigned because the prompt contained no urgency rules.
+- Free-text labels could vary between runs, making complaint routing inconsistent.
 
 ### Final Version v1.1 Output
 1. **Primary category:** Damaged Package
@@ -57,7 +60,10 @@ This complaint relates to a late delivery and damaged packaging. It should be se
 5. **Reason for classification:** Package damage is the main issue and damaged deliveries are defined as Medium urgency. Late delivery is also reported as a secondary issue.
 6. **Recommended staff action:** Route the complaint to customer service for review and contact the customer as requested. Confirm shipment details and the reported package condition before deciding any further action.
 
-**Improvements – Final v1.1:** Added controlled categories, urgency rules and factual reasoning, improving consistent complaint routing.
+**Improvements – Final v1.1:**
+- Added approved complaint categories and clear urgency rules.
+- Required one primary category plus any secondary issue for better routing.
+- Added factual reasoning and no-blame/no-invention controls for consistency.
 
 ### Comparison
 Version 1 identified the general issues but did not apply a standard category or urgency level. Version 1.1 selected one primary category, captured the secondary issue, applied a defined Medium urgency rule and provided a factual summary without assigning blame. This makes the result easier to route and manage consistently.
