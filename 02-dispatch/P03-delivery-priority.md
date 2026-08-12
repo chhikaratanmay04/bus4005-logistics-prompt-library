@@ -42,7 +42,10 @@ Special handling: None provided
 ### Version 1 Output
 This delivery should be treated as **high priority** because it is a same-day shipment with a short delivery window between 8:00 am and 11:00 am.
 
-**Issues & Limitations – Version 1:** Urgency relied on subjective judgement because no clear priority rules were defined.
+**Issues & Limitations – Version 1:**
+- The High-priority decision was based on general AI judgement.
+- No priority categories, time limits or review rules were defined.
+- The result was difficult to audit or reproduce consistently across shipments.
 
 ### Final Version v1.1 Output
 1. **Priority:** High
@@ -51,7 +54,10 @@ This delivery should be treated as **high priority** because it is a same-day sh
 4. **Missing information:** None required for this classification.
 5. **Dispatcher review required:** Yes
 
-**Improvements – Final v1.1:** Added defined priority rules and factual reasoning, making the classification consistent and auditable.
+**Improvements – Final v1.1:**
+- Added clear High, Medium, Low and Review Required classification rules.
+- Required the AI to show the facts and reason used for its decision.
+- Added dispatcher review and prevented route, driver or deadline decisions.
 
 ### Comparison
 Both versions identified the shipment as urgent, but Version 1 relied on general judgement. Version 1.1 applied a defined rule, showed the exact facts used and made the decision auditable. It also prevented the AI from assigning a driver, route or new deadline and clearly signalled that a dispatcher should review a High-priority case.
