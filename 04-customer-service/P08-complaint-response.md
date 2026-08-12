@@ -37,6 +37,30 @@ Approved action:
 
 Add this heading: **Draft – staff review required**
 
+## Example Input
+Customer complaint: My parcel arrived one day late and the outer box was crushed, although the item inside seems okay. I would like someone to call me.
+
+Approved action: Customer service staff will review the delivery record after receiving the shipment or tracking number.
+
+## ChatGPT Test Evidence
+### Version 1 Output
+We’re sorry to hear that your parcel arrived late and that the outer box was crushed. We understand your concern and apologise for the inconvenience. We will look into the delivery and arrange for someone to contact you about the issue.
+
+### Final Version v1.1 Output
+**Draft – staff review required**
+
+Dear Customer,
+
+We’re sorry that your parcel arrived one day late and that the outer box was crushed. We apologise for the inconvenience this has caused.
+
+Our customer service team can review the delivery record once we receive your shipment or tracking number. Please provide that number so the matter can be reviewed. We have also noted your request to be contacted.
+
+Kind regards,  
+Customer Service Team
+
+### Comparison
+Version 1 was polite but stated that the business would “look into” the delivery and arrange contact without a clearly supplied approval rule. Version 1.1 limited the response to the approved next step, requested the missing tracking information, avoided blame and did not promise compensation or a particular investigation outcome. The final version is therefore safer and more operationally controlled.
+
 ## Test Result
 The final prompt retained a professional tone while keeping commitments inside approved business actions.
 
