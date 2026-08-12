@@ -1,6 +1,6 @@
 # BUS4005 Logistics Prompt Library
 
-**Assessment:** BUS4005 – Generative AI for Business, Assessment 1  
+**Subject:**  AI for Business  
 **Business field:** Last-mile logistics and delivery operations  
 **Model tested on:** ChatGPT  
 **Portfolio purpose:** Demonstrate 10 tested and iterated prompts that support workflow automation while retaining human oversight.
