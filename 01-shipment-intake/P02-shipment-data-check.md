@@ -42,6 +42,28 @@ Mark **READY** only when every required field is provided. Do not guess or creat
 Shipment record:
 [SHIPMENT INFORMATION]
 
+## Example Input
+Shipment ID: LG204  
+Pickup: Laverton warehouse  
+Delivery: Footscray  
+Delivery date: 14 August 2026  
+Packages: 3 cartons  
+Total weight: 27 kg
+
+## ChatGPT Test Evidence
+### Version 1 Output
+The shipment contains the shipment ID, pickup location, delivery location, delivery date, package quantity and total weight. Information that may still be needed includes a delivery deadline, customer instructions and any special handling requirements.
+
+### Final Version v1.1 Output
+1. **Validation status:** READY
+2. **Required fields present:** Shipment ID, Pickup location, Delivery location, Delivery date, Number of packages, Weight
+3. **Required fields missing:** None
+4. **Additional information provided:** None
+5. **Staff action required:** No completeness follow-up required. Staff should verify the accuracy of the supplied shipment information before dispatch.
+
+### Comparison
+Version 1 treated optional information as though it might be missing requirements because the original prompt did not define mandatory fields. Version 1.1 used explicit validation rules and correctly marked the shipment READY because every required field was present. The improved prompt is more predictable and suitable for pre-dispatch checking.
+
 ## Test Result
 The final version provided a repeatable READY/REVIEW REQUIRED decision based only on defined fields.
 
