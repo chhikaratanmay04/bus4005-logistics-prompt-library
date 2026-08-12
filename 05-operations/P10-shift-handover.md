@@ -82,3 +82,9 @@ Missing source notes or incorrect statuses can carry errors into the next shift.
 
 ## Mitigation and Human Oversight
 Outgoing staff verify the handover before transferring responsibility to the next shift.
+
+## Audit Log
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---|---|---|---|
+| Version 1 | Used a general summarisation prompt without separating open actions, completed items or missing information. | The output accurately described the notes but combined delays, failed delivery, warehouse damage and completed work in one paragraph. | Summarisation alone does not guarantee an operationally useful handover because important unfinished work can remain difficult to scan. |
+| Final v1.1 | Added seven workflow headings, required status/action/next-action fields and prohibited invented deadlines, responsibilities or commitments. | Open issues, completed work and missing information were clearly separated, and the model avoided creating unsupported priorities or owners. | Workflow-specific structure turns unstructured notes into a more actionable handover while human verification remains necessary before responsibility is transferred. |
