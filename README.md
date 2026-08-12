@@ -30,8 +30,6 @@ A mid-sized logistics company receives shipment details, dispatch instructions, 
 - Missing-information rules to reduce hallucination.
 - Human-review requirements for customer communication, dispatch decisions and safety incidents.
 
-Use the same input for both versions so the effect of prompt improvement can be compared fairly. Actual ChatGPT outputs should be retained as testing evidence rather than invented.
-
 ## Iteration Evidence
 Each prompt file contains Version 1, issues identified, an improved Final Version, test results, automation potential, risks, limitations and mitigation. GitHub commit history provides additional evidence of prompt development.
 
