@@ -69,3 +69,9 @@ This prompt cannot replace emergency procedures, formal investigations or safety
 
 ## Mitigation and Human Oversight
 All safety-related incidents require human management review and normal company incident procedures.
+
+## Audit Log
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---|---|---|---|
+| Version 1 | Asked the AI to summarise the incident and decide whether it should be escalated without defined safety, blame or missing-information controls. | The output summarised the facts but made a direct escalation judgement based on its own reasoning. | High-risk operational prompts should not give the model unrestricted authority to make safety, liability or escalation decisions. |
+| Final v1.1 | Added a fixed incident structure, explicit missing-information labels, no-cause/no-blame/no-legal-conclusion constraints and management-review guidance. | The output clearly separated confirmed damage, actions already taken and missing facts without inventing cause or responsibility. | In sensitive incident workflows, AI is most appropriate for organising evidence and highlighting follow-up needs while formal decisions remain with human management. |
