@@ -35,6 +35,30 @@ Approved information:
 
 Add this heading above the message: **Draft – staff review required**
 
+## Example Input
+Customer name: Alex  
+Shipment ID: SP522  
+Original delivery time: 3:30 pm  
+New estimated arrival: 4:20 pm  
+Reason provided: Road closure
+
+## ChatGPT Test Evidence
+### Version 1 Output
+Hi Alex, we’re sorry that shipment SP522 is running late due to a road closure. Your updated estimated arrival time is 4:20 pm. We apologise for the inconvenience and appreciate your patience.
+
+### Final Version v1.1 Output
+**Draft – staff review required**
+
+Hi Alex,
+
+We apologise for the delay to shipment SP522. The confirmed reason provided is a road closure, and the current estimated arrival time is 4:20 pm. We’re sorry for the inconvenience. We will update you if further confirmed information becomes available.
+
+Kind regards,  
+Customer Service Team
+
+### Comparison
+Version 1 produced a usable message but had no built-in controls over promises or unsupported details. Version 1.1 clearly labelled the message as a draft, used only approved information, retained the confirmed ETA and reason, and added a rule against refunds, compensation and guaranteed delivery times. This makes the final version safer for customer-facing use.
+
 ## Test Result
 The improved prompt produced a consistent customer message while preventing unsupported promises.
 
