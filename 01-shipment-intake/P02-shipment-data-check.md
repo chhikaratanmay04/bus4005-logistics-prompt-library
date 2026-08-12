@@ -75,3 +75,9 @@ A field can be present but incorrect; the AI cannot verify addresses, weights or
 
 ## Mitigation and Human Oversight
 Use AI for completeness checking only. Staff or system validation must confirm accuracy.
+
+## Audit Log
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---|---|---|---|
+| Version 1 | Asked the AI to identify missing shipment information without defining which fields were mandatory or optional. | The output correctly recognised the supplied fields but suggested optional details might be missing requirements. | Validation prompts need explicit business rules; otherwise the AI may apply its own judgement about what information is required. |
+| Final v1.1 | Defined six mandatory fields, separated optional fields, added READY/REVIEW REQUIRED status and prohibited guessing. | The same record was consistently classified as READY and the output clearly separated required, missing and additional information. | Controlled validation criteria improve consistency, but human or system checks are still required to verify whether supplied data is accurate. |
