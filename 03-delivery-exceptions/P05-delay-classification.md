@@ -70,3 +70,9 @@ ETA data may change rapidly and safety issues can require context beyond the pro
 
 ## Mitigation and Human Oversight
 Operations staff confirm live ETA information and immediately review any safety-related case.
+
+## Audit Log
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---|---|---|---|
+| Version 1 | Asked the AI to classify a delay without defining severity thresholds or limiting the actions it could recommend. | The output correctly described the 50-minute delay but called it “significant,” a subjective label that could vary between runs. | Operational classifications need measurable thresholds rather than vague language. |
+| Final v1.1 | Added time-based Low/Medium/High rules, a Review Required category and a restricted set of administrative actions. | The 50-minute delay was consistently classified as Medium and the recommended action was limited to “Contact customer.” | Numeric rules and controlled action choices make exception handling more consistent and reduce the risk of unsupported decisions. |
