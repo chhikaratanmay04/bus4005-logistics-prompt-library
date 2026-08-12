@@ -36,8 +36,18 @@ Operational incident: **P09 → P10**
 - Missing-information rules to reduce hallucination.
 - Human-review requirements for customer communication, dispatch decisions and safety incidents.
 
+## ChatGPT Testing Guide
+The repository includes **[CHATGPT-TEST-PROMPTS.md](CHATGPT-TEST-PROMPTS.md)** with a realistic test input for every prompt, testing goals, evaluation criteria and a standard comparison prompt for analysing Version 1 against the Final Version.
+
+Use the same input for both versions so the effect of prompt improvement can be compared fairly. Actual ChatGPT outputs should be retained as testing evidence rather than invented.
+
 ## Iteration Evidence
 Each prompt file contains Version 1, issues identified, an improved Final Version, test results, automation potential, risks, limitations and mitigation. GitHub commit history provides additional evidence of prompt development.
+
+The repository history now separately documents:
+1. Initial Version 1 prompt testing.
+2. Improved final prompt versions and workflow controls.
+3. Addition of the standard ChatGPT testing and comparison guide.
 
 ## Responsible Use
 The library is designed to support staff rather than make final operational, safety, legal or compensation decisions. Human review is required where information is incomplete, a customer-facing response is produced, safety is involved or a dispatch decision may materially affect service.
