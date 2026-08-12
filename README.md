@@ -22,12 +22,6 @@ A mid-sized logistics company receives shipment details, dispatch instructions, 
 | P09 | Incident Escalation | Operations | Medium | High |
 | P10 | Shift Handover | Operations | High | Medium |
 
-## Prompt Chaining
-Shipment intake: **P01 → P02 → P03 → P04**  
-Delivery exception: **P05 → P06**  
-Customer complaint: **P07 → P08**  
-Operational incident: **P09 → P10**
-
 ## Prompting Strategies Used
 - Role prompting to define the AI as a logistics operations assistant.
 - Grounding constraints such as “use only the information provided”.
