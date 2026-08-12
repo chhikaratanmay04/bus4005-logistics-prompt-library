@@ -40,6 +40,8 @@ Approved action: Customer service staff will review the delivery record after re
 ### Version 1 Output
 We’re sorry to hear that your parcel arrived late and that the outer box was crushed. We understand your concern and apologise for the inconvenience. We will look into the delivery and arrange for someone to contact you about the issue.
 
+**Issues & Limitations – Version 1:** The response could imply unapproved investigation, contact or compensation commitments.
+
 ### Final Version v1.1 Output
 **Draft – staff review required**
 
@@ -51,6 +53,8 @@ Our customer service team can review the delivery record once we receive your sh
 
 Kind regards,  
 Customer Service Team
+
+**Improvements – Final v1.1:** Limited the reply to approved actions, requested missing tracking details and added staff review controls.
 
 ### Comparison
 Version 1 was polite but stated that the business would “look into” the delivery and arrange contact without a clearly supplied approval rule. Version 1.1 limited the response to the approved next step, requested the missing tracking information, avoided blame and did not promise compensation or a particular investigation outcome. The final version is therefore safer and more operationally controlled.
