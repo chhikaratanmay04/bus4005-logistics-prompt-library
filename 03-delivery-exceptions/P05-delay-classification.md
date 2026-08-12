@@ -44,6 +44,8 @@ Customer contacted: No
 ### Version 1 Output
 Shipment SP510 is experiencing a significant delay of about 50 minutes because of a road closure on CityLink. The customer has not yet been contacted, so the customer should be informed about the delay and updated arrival time.
 
+**Issues & Limitations – Version 1:** Delay severity was subjective and recommended actions were not controlled by defined business rules.
+
 ### Final Version v1.1 Output
 1. **Shipment ID:** SP510
 2. **Delay category:** Medium
@@ -52,6 +54,8 @@ Shipment SP510 is experiencing a significant delay of about 50 minutes because o
 5. **Reported reason:** Road closure on CityLink
 6. **Customer contacted:** No
 7. **Recommended administrative action:** Contact customer
+
+**Improvements – Final v1.1:** Added time-based categories and approved actions, producing a consistent and controlled delay classification.
 
 ### Comparison
 Version 1 used the subjective term “significant” because the original prompt did not define severity levels. Version 1.1 calculated the 50-minute delay against a clear rule and classified it as Medium. The final version also restricted the recommended action to an approved list, improving consistency and reducing the chance of unapproved operational or compensation decisions.
