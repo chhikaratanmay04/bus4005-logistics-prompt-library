@@ -43,6 +43,8 @@ Sarah needs two cartons picked up from Sunshine warehouse tomorrow morning and d
 - Handling: Fragile items
 - Customer request: Call before delivery
 
+**Issues & Limitations – Version 1:** No fixed headings; delivery timing was mixed with locations and missing-data handling was unclear.
+
 ### Final Version v1.1 Output
 **Pickup location:** Sunshine warehouse  
 **Delivery location:** Richmond  
@@ -52,6 +54,8 @@ Sarah needs two cartons picked up from Sunshine warehouse tomorrow morning and d
 **Weight:** 18 kg  
 **Special handling requirements:** Fragile items  
 **Customer instructions:** Phone call before delivery
+
+**Improvements – Final v1.1:** Added exact fields, grounding and a “Not provided” rule, making the output structured and consistent.
 
 ### Comparison
 Version 1 captured the main facts but combined timing information with locations and used its own headings. Version 1.1 produced the exact eight-field structure requested, separated each operational field and added a clear rule for handling missing information. The improved version is more consistent and easier to transfer into a logistics system.
