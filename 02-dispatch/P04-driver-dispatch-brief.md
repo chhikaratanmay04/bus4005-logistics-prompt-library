@@ -37,6 +37,39 @@ Do not create routes, travel times, access instructions or customer details that
 Delivery details:
 [DELIVERY DETAILS]
 
+## Example Input
+Shipment ID: SP421  
+Driver ID: D17  
+Pickup: Port Melbourne warehouse  
+Delivery: Carlton  
+Pickup time: 10:30 am  
+Delivery deadline: 2:00 pm  
+Packages: 4 boxes  
+Weight: 32 kg  
+Handling: Fragile glass items  
+Customer instruction: Call before arrival  
+Pickup instruction: Use loading dock B
+
+## ChatGPT Test Evidence
+### Version 1 Output
+Driver D17 should collect shipment SP421 from Port Melbourne warehouse at 10:30 am and deliver four boxes weighing 32 kg to Carlton before 2:00 pm. The shipment contains fragile glass items. Use loading dock B for pickup and call the customer before arrival.
+
+### Final Version v1.1 Output
+**Shipment ID:** SP421  
+**Driver ID:** D17  
+**Pickup location:** Port Melbourne warehouse  
+**Pickup time:** 10:30 am  
+**Delivery location:** Carlton  
+**Delivery deadline:** 2:00 pm  
+**Packages and weight:** 4 boxes, 32 kg  
+**Special handling:** Fragile glass items  
+**Pickup instructions:** Use loading dock B  
+**Customer instructions:** Call before arrival  
+**Missing information:** None
+
+### Comparison
+Version 1 was readable but placed most operational details in a paragraph. Version 1.1 used fixed headings, making the brief faster for a driver or dispatcher to scan. It also included a missing-information field and explicitly prevented invented routes, travel times or access instructions.
+
 ## Test Result
 The improved prompt generated a scannable driver brief with consistent headings and no invented route information.
 
