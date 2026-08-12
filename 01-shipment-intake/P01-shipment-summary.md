@@ -36,6 +36,29 @@ Shipment information:
 ## Example Input
 Sarah needs two cartons picked up from Sunshine warehouse tomorrow morning and delivered to Richmond before 3 pm. Total weight is 18 kg. Fragile items. Customer requested a phone call before delivery.
 
+## ChatGPT Test Evidence
+### Version 1 Output
+**Delivery Summary**
+- Pickup: Sunshine warehouse, tomorrow morning
+- Delivery: Richmond, before 3 pm
+- Packages: Two cartons
+- Total weight: 18 kg
+- Handling: Fragile items
+- Customer request: Call before delivery
+
+### Final Version v1.1 Output
+**Pickup location:** Sunshine warehouse  
+**Delivery location:** Richmond  
+**Delivery date:** Tomorrow  
+**Delivery deadline:** Before 3 pm  
+**Number of packages:** Two cartons  
+**Weight:** 18 kg  
+**Special handling requirements:** Fragile items  
+**Customer instructions:** Phone call before delivery
+
+### Comparison
+Version 1 captured the main facts but combined timing information with locations and used its own headings. Version 1.1 produced the exact eight-field structure requested, separated each operational field and added a clear rule for handling missing information. The improved version is more consistent and easier to transfer into a logistics system.
+
 ## Test Result
 The improved prompt produced a consistent eight-field shipment summary and clearly separated supplied facts from missing information.
 
