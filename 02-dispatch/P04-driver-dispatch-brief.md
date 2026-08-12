@@ -51,6 +51,8 @@ Pickup instruction: Use loading dock B
 ### Version 1 Output
 Driver D17 should collect shipment SP421 from Port Melbourne warehouse at 10:30 am and deliver four boxes weighing 32 kg to Carlton before 2:00 pm. The shipment contains fragile glass items. Use loading dock B for pickup and call the customer before arrival.
 
+**Issues & Limitations – Version 1:** Correct details were buried in a paragraph and missing information was not clearly flagged.
+
 ### Final Version v1.1 Output
 **Shipment ID:** SP421  
 **Driver ID:** D17  
@@ -63,6 +65,8 @@ Driver D17 should collect shipment SP421 from Port Melbourne warehouse at 10:30 
 **Pickup instructions:** Use loading dock B  
 **Customer instructions:** Call before arrival  
 **Missing information:** None
+
+**Improvements – Final v1.1:** Added fixed driver headings and missing-data rules, making the brief faster to scan and more reliable.
 
 ### Comparison
 Version 1 was readable but placed most operational details in a paragraph. Version 1.1 used fixed headings, making the brief faster for a driver or dispatcher to scan. It also included a missing-information field and explicitly prevented invented routes, travel times or access instructions.
