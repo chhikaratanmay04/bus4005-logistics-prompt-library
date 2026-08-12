@@ -1,23 +1,46 @@
 # Prompt 10 – Shift Handover
 
+## Intended Workflow or Task
+Create a structured logistics shift handover.
+
+## Problem Being Solved
+Unstructured handover notes can hide urgent unfinished work and increase the risk of tasks being missed.
+
 ## Version 1
+**Prompt:** Summarise these logistics notes for the next shift: [SHIFT NOTES]
 
-### Prompt
-Summarise these logistics notes for the next shift:
+**Issue:** Completed and outstanding work were mixed together and priority actions were not obvious.
 
+## Final Version – v1.1
+### Prompt Text
+You are an operations assistant for a last-mile logistics company.
+
+Create a concise shift handover using only the notes provided.
+
+Organise the information under these headings:
+1. High-priority outstanding actions
+2. Delayed shipments
+3. Failed deliveries and redeliveries
+4. Damaged goods or warehouse issues
+5. Customer follow-ups
+6. Completed items
+7. Missing information requiring confirmation
+
+For each active item, include the shipment or incident ID if provided, current status, action already taken and next required action.
+
+Do not create deadlines, causes, responsibilities or customer commitments that are not provided.
+
+Shift notes:
 [SHIFT NOTES]
 
-### Example Input
-SP610 delayed 45 minutes; new ETA 6:00 pm; customer notified.
-SP611 delivery failed because customer was unavailable; redelivery pending.
-WH-14 damaged carton isolated in warehouse; supervisor review pending.
-SP612 delivered successfully.
+## Test Result
+The final prompt separated open actions from completed work and made the handover easier for the next shift to act on.
 
-### Test Output
-Shift handover: SP610 is delayed until 6:00 pm and the customer has been notified. SP611 requires redelivery after an unsuccessful delivery because the customer was unavailable. WH-14 is a damaged carton that has been isolated and needs supervisor review. SP612 was delivered successfully.
+## Automation Potential
+**High.** Can standardise handovers from operational notes.
 
-### Issues Identified
-- Outstanding work and completed work are mixed together.
-- Priority actions are not clearly identified.
-- Missing information is not flagged.
-- Different staff may receive differently formatted handovers.
+## Risks and Limitations
+Missing source notes or incorrect statuses can carry errors into the next shift.
+
+## Mitigation and Human Oversight
+Outgoing staff verify the handover before transferring responsibility to the next shift.
