@@ -72,3 +72,9 @@ Poor or incomplete approved information can produce an unhelpful response.
 
 ## Mitigation and Human Oversight
 Staff investigate the complaint, approve commitments and check the final response.
+
+## Audit Log
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---|---|---|---|
+| Version 1 | Used a general reply instruction with no approved-action boundary, tracking-information rule or restrictions on commitments. | The response was polite but implied that the business would investigate and arrange contact without a clearly defined approval constraint. | A professional tone alone is not enough; customer-service prompts also need limits on what the AI is authorised to promise. |
+| Final v1.1 | Added an approved-action input, required missing tracking information to be requested, prohibited refunds/compensation/legal admissions and added staff review. | The output followed the supplied next step, requested the tracking number and avoided unsupported promises or blame. | Separating drafting from business decision authority makes AI useful for customer service while keeping commitments under human control. |
