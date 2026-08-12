@@ -7,7 +7,7 @@ Classify and prioritise customer complaints.
 Complaints arrive in free text and require manual sorting before the correct team can respond.
 
 ## Version 1
-**Prompt:** Classify this logistics customer complaint: [CUSTOMER COMPLAINT]
+**Prompt:** Classify this logistics customer complaint.
 
 **Issue:** No approved categories or urgency rules were defined.
 
@@ -39,9 +39,6 @@ Return:
 6. Recommended staff action
 
 Do not assign blame or invent facts.
-
-Customer complaint:
-[CUSTOMER COMPLAINT]
 
 ## Example Input
 My parcel arrived one day late and the outer box was crushed, although the item inside seems okay. I would like someone to call me.
