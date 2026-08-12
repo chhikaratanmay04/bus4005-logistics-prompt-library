@@ -30,9 +30,6 @@ Do not promise a refund, discount, compensation or guaranteed delivery time. Do 
 
 Keep the message under 100 words.
 
-Approved information:
-[DELAY INFORMATION]
-
 Add this heading above the message: **Draft – staff review required**
 
 ## Example Input
