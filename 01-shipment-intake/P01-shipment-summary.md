@@ -70,3 +70,9 @@ Incomplete source information, ambiguous wording, unusual logistics terminology 
 
 ## Mitigation and Human Oversight
 Use only supplied information, show missing fields explicitly and require staff review for incomplete, unusual or high-value shipments.
+
+## Audit Log
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---|---|---|---|
+| Version 1 | Used a basic summarisation instruction without fixed fields, grounding rules or missing-information handling. | The main shipment facts were captured, but pickup/delivery timing was combined with locations and the output headings were chosen by the AI. | A general prompt can produce understandable output, but it is not reliable enough for consistent operational data entry. |
+| Final v1.1 | Added a logistics operations role, eight required output fields, a use-only-provided-information rule and a “Not provided” instruction for missing data. | The output became structured, predictable and easier to transfer into a logistics system while reducing the risk of invented details. | Role, fixed structure and explicit missing-data controls improve prompt reliability and automation readiness. |
