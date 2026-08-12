@@ -43,6 +43,24 @@ Do not assign blame or invent facts.
 Customer complaint:
 [CUSTOMER COMPLAINT]
 
+## Example Input
+My parcel arrived one day late and the outer box was crushed, although the item inside seems okay. I would like someone to call me.
+
+## ChatGPT Test Evidence
+### Version 1 Output
+This complaint relates to a late delivery and damaged packaging. It should be sent to customer service for follow-up because the customer has asked to be contacted.
+
+### Final Version v1.1 Output
+1. **Primary category:** Damaged Package
+2. **Secondary issue:** Late Delivery
+3. **Urgency:** Medium
+4. **Factual summary:** The customer reports that the parcel arrived one day late and the outer box was crushed. The customer states that the item inside appears okay and has requested a phone call.
+5. **Reason for classification:** Package damage is the main issue and damaged deliveries are defined as Medium urgency. Late delivery is also reported as a secondary issue.
+6. **Recommended staff action:** Route the complaint to customer service for review and contact the customer as requested. Confirm shipment details and the reported package condition before deciding any further action.
+
+### Comparison
+Version 1 identified the general issues but did not apply a standard category or urgency level. Version 1.1 selected one primary category, captured the secondary issue, applied a defined Medium urgency rule and provided a factual summary without assigning blame. This makes the result easier to route and manage consistently.
+
 ## Test Result
 The final prompt produced consistent categories and clearer escalation priority.
 
