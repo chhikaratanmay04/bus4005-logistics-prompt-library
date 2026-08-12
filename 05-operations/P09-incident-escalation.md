@@ -36,6 +36,28 @@ Do not determine the cause, assign blame, make medical conclusions or decide leg
 Incident details:
 [INCIDENT DETAILS]
 
+## Example Input
+A forklift lightly contacted a pallet and two cartons fell. No injury was reported. One carton has visible damage. The area has been secured. The supervisor has not yet been informed.
+
+## ChatGPT Test Evidence
+### Version 1 Output
+A forklift contacted a pallet, causing two cartons to fall. No injuries were reported, but one carton was visibly damaged. The area has been secured. The incident should be escalated to the supervisor for review because equipment contact and product damage occurred.
+
+### Final Version v1.1 Output
+1. **Incident summary:** A forklift contacted a pallet and two cartons fell.
+2. **Date/time:** Not provided – follow-up required
+3. **Location:** Not provided – follow-up required
+4. **People involved:** Not provided – follow-up required
+5. **Confirmed damage or disruption:** One carton has visible damage.
+6. **Reported injury or safety concern:** No injury was reported. No separate safety concern was explicitly provided.
+7. **Actions already taken:** The area has been secured.
+8. **Missing information:** Date/time, exact location, people involved and any further incident details are not provided and require follow-up.
+9. **Recommended next administrative step:** Inform the supervisor and arrange management review under normal incident procedures.
+10. **Person responsible for review:** Not provided – follow-up required
+
+### Comparison
+Version 1 made a direct escalation judgement without defined controls. Version 1.1 separated confirmed facts from missing information, avoided assigning cause or blame and clearly identified what still needed follow-up. The final prompt is more suitable for sensitive operational incidents because it supports management review without replacing formal safety or investigation procedures.
+
 ## Test Result
 The final prompt separated confirmed information from missing facts and avoided unsupported conclusions.
 
