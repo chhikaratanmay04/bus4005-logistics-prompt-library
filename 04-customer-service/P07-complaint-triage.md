@@ -72,3 +72,9 @@ Ambiguous complaints can be misclassified and the model cannot verify a customer
 
 ## Mitigation and Human Oversight
 High-priority and uncertain complaints require staff review before action.
+
+## Audit Log
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---|---|---|---|
+| Version 1 | Asked for complaint classification without defining approved categories, urgency levels or a standard output format. | The AI identified late delivery and damaged packaging but did not select a consistent primary category or urgency level. | Free-text classification is difficult to automate reliably when the model is allowed to invent its own labels. |
+| Final v1.1 | Added controlled complaint categories, explicit urgency rules, factual-summary requirements and a no-blame/no-invention constraint. | The output selected Damaged Package as the primary category, Late Delivery as secondary and Medium urgency with clear reasoning. | Controlled taxonomies and escalation rules improve routing consistency while human review remains important for ambiguous or high-risk complaints. |
